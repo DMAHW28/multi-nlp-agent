@@ -60,7 +60,7 @@ uvicorn run api.api:app --reload
 ### Lancer l’agent:
 
 ```bash
-python lg_agent.py
+python main.py
 ```
 
 ## Technologies

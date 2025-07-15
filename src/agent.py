@@ -6,8 +6,8 @@ from typing import List, Optional, Dict, Any
 from langchain_core.prompts import PromptTemplate
 from langgraph.graph import StateGraph, END, START
 
-logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger(__name__)
+# logging.basicConfig(level=logging.DEBUG)
+# logger = logging.getLogger(__name__)
 
 MODEL_NAME = "llama3.2:3b"
 
@@ -66,14 +66,14 @@ class Agent:
         try:
             action = self.llm.invoke(state.input)
             tools_to_call = action.tool_calls
-            if self.with_logs: logger.debug(f"[decision_node] Outils choisis : {tools_to_call}")
+            # if self.with_logs: logger.debug(f"[decision_node] Outils choisis : {tools_to_call}")
             if not tools_to_call:
                 state.output = "Tâche non supportée"
                 return state
             else:
                 state.tools_to_call = tools_to_call
         except Exception as e:
-            if self.with_logs: logger.error(f"[decision_node] Erreur: {e}")
+            # if self.with_logs: logger.error(f"[decision_node] Erreur: {e}")
             state.output = "Erreur lors de la sélection des outils"
         return state
 
@@ -82,14 +82,14 @@ class Agent:
             pred_tool = state.tools_to_call[state.current_tool_index]
             tool_name = pred_tool['name']
             tool_text = pred_tool['args']['text']
-            if self.with_logs: logger.debug(f'Outils choisis par le LLM: {tool_name}')
+            # if self.with_logs: logger.debug(f'Outils choisis par le LLM: {tool_name}')
             for tool in tools:
                 if tool.name.lower() == tool_name:
                     prediction = tool.run(tool_text)
                     state.results.append(f"{tool.name}: {prediction}")
                     break
         except Exception as e:
-            if self.with_logs: logger.error(f"[tool_node] Erreur avec {tool_name}: {e}")
+            # if self.with_logs: logger.error(f"[tool_node] Erreur avec {tool_name}: {e}")
             state.results.append(f"{tool_name}: ERREUR ({e})")
         finally:
             state.current_tool_index += 1
