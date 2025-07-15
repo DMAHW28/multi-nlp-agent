@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# Modèles lourds
+models/*.pth
+
+# IDE
+.idea/
+
+perfomance_evaluation.ipynb
+lg_agent.py
+
+data/test_case.json

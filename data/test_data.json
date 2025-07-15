@@ -1,0 +1,145 @@
+[
+  {
+    "input": "What sentiment is conveyed in: I absolutely love how this therapy changed my outlook on life.",
+    "expected_task": "sentiment_analysis"
+  },
+  {
+    "input": "Determine the sentiment in this sentence: The new medication gave me terrible headaches.",
+    "expected_task": "sentiment_analysis"
+  },
+  {
+    "input": "Can you assess the sentiment of: This hospital has the best staff I’ve ever seen.",
+    "expected_task": "sentiment_analysis"
+  },
+  {
+    "input": "Identify the sentiment in: I feel no particular way about the new dietary plan.",
+    "expected_task": "sentiment_analysis"
+  },
+  {
+    "input": "What is the sentiment expressed here: The treatment left me feeling very disappointed.",
+    "expected_task": "sentiment_analysis"
+  },
+  {
+    "input": "How would you describe the sentiment in this text: I’m really impressed with how the doctors handled my case.",
+    "expected_task": "sentiment_analysis"
+  },
+  {
+    "input": "Analyze sentiment: The staff were incredibly rude during my last appointment.",
+    "expected_task": "sentiment_analysis"
+  },
+  {
+    "input": "Classify the sentiment of this comment: This was the worst hospital visit I’ve ever had.",
+    "expected_task": "sentiment_analysis"
+  },
+  {
+    "input": "Give me the sentiment in: I feel extremely satisfied with my physical therapy progress.",
+    "expected_task": "sentiment_analysis"
+  },
+  {
+    "input": "Sentiment check for: My experience with the new doctor has been very positive.",
+    "expected_task": "sentiment_analysis"
+  },
+
+  {
+    "input": "Which emotions are expressed in: The constant fatigue makes me feel hopeless and frustrated.",
+    "expected_task": "emotion_analysis"
+  },
+  {
+    "input": "Find the emotions in this statement: I feel anxious and scared before every hospital visit.",
+    "expected_task": "emotion_analysis"
+  },
+  {
+    "input": "What emotions can you detect in: I’m overwhelmed with joy since my surgery was a success.",
+    "expected_task": "emotion_analysis"
+  },
+  {
+    "input": "Analyze the emotions present in: There’s a sense of calm and relief after months of therapy.",
+    "expected_task": "emotion_analysis"
+  },
+  {
+    "input": "Detect emotions: My emotions are all over the place: sadness, anger, and some relief.",
+    "expected_task": "emotion_analysis"
+  },
+  {
+    "input": "What feelings are conveyed here: This news fills me with joy and a sense of accomplishment.",
+    "expected_task": "emotion_analysis"
+  },
+  {
+    "input": "Identify emotional states in: I feel a deep sense of gratitude towards my caregivers.",
+    "expected_task": "emotion_analysis"
+  },
+  {
+    "input": "Determine emotional tone: The fear and anxiety are almost unbearable before each scan.",
+    "expected_task": "emotion_analysis"
+  },
+  {
+    "input": "Show me what emotions are in: I’m still shaken and angry about the delay in treatment.",
+    "expected_task": "emotion_analysis"
+  },
+  {
+    "input": "How does this text feel emotionally: There’s a heavy feeling of grief after losing my pet.",
+    "expected_task": "emotion_analysis"
+  },
+
+  {
+    "input": "Extract named entities from: Patient diagnosed with chronic obstructive pulmonary disease at Cleveland Clinic.",
+    "expected_task": "ner_analysis"
+  },
+  {
+    "input": "What entities can you find in: Prescribed 10mg of Atorvastatin to manage cholesterol levels.",
+    "expected_task": "ner_analysis"
+  },
+  {
+    "input": "Identify all entities in this text: Diagnosed with epilepsy and referred to Dr. Jane Carter at Stanford.",
+    "expected_task": "ner_analysis"
+  },
+  {
+    "input": "Find medical entities here: The patient was administered 500mg of Amoxicillin in Paris General Hospital.",
+    "expected_task": "ner_analysis"
+  },
+  {
+    "input": "Get entities from: Prescribed insulin therapy for newly diagnosed diabetic patient.",
+    "expected_task": "ner_analysis"
+  },
+  {
+    "input": "List named entities: Patient John Smith admitted to New York Presbyterian on June 10.",
+    "expected_task": "ner_analysis"
+  },
+  {
+    "input": "Perform NER on: 50mg of Sertraline was prescribed for depression.",
+    "expected_task": "ner_analysis"
+  },
+  {
+    "input": "Which named entities appear in: Diagnosed with hypertension and started on 25mg of Metoprolol.",
+    "expected_task": "ner_analysis"
+  },
+  {
+    "input": "Entity extraction from: Referred to Dr. Alex Morgan for further evaluation in Berlin.",
+    "expected_task": "ner_analysis"
+  },
+  {
+    "input": "NER task: Patient received chemotherapy at Mayo Clinic starting May 2023.",
+    "expected_task": "ner_analysis"
+  },
+
+  {
+    "input": "Pull out entities: Patient Maria Gonzalez admitted to ICU for acute renal failure.",
+    "expected_task": "ner_analysis"
+  },
+  {
+    "input": "Scan for entities: Prescribed 5mg Diazepam for anxiety before MRI scan.",
+    "expected_task": "ner_analysis"
+  },
+  {
+    "input": "Get all entities from this record: Treated with high-dose corticosteroids at St. Mary’s Hospital.",
+    "expected_task": "ner_analysis"
+  },
+  {
+    "input": "NER analysis: Patient underwent appendectomy performed by Dr. Lee at Seoul National University Hospital.",
+    "expected_task": "ner_analysis"
+  },
+  {
+    "input": "Entities to extract: Treatment with 20mg Omeprazole started last week.",
+    "expected_task": "ner_analysis"
+  }
+]

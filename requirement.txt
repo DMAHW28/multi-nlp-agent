@@ -1,0 +1,10 @@
+langchain
+langchain-core
+langchain-ollama
+langgraph
+pydantic
+scikit-learn
+torch
+tensorflow
+transformers
+peft
